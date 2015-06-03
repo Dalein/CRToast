@@ -28,9 +28,7 @@
 
 - (void)setStatusBarStyle:(UIStatusBarStyle)statusBarStyle {
     _statusBarStyle = statusBarStyle;
-    if ([self respondsToSelector:@selector(setNeedsStatusBarAppearanceUpdate)]) {
-        [self setNeedsStatusBarAppearanceUpdate];
-    }
+    [self setNeedsStatusBarAppearanceUpdate];
 }
 
 #pragma mark UIViewController
